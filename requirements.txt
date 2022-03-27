@@ -1,0 +1,8 @@
+flask
+Flask-RESTful
+requests
+elasticsearch
+elasticsearch[async]
+ibm-cloud-sdk-core
+ibm-watson
+urllib3
