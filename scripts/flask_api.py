@@ -12,6 +12,11 @@ class Hotel_Indexer(Resource)
         return "<p>Hello, World! hotel_indexer</p>"
 
 
+
+BASE = "http://127.0.0.1:9200/"
+response = requests.put(BASE + "hotelindexer")
+    
+
 api.add_resource(resource=Hotel_Indexer, key="/indexer")
 
 # this to be able to run this api directly using python
