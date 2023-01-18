@@ -18,21 +18,21 @@ ELASTIC_PASSWORD = "7ysm8X2-_DU1fiAwpkSh"
 
 
 
-# SSL client authentication using client_cert and client_key
+# # SSL client authentication using client_cert and client_key
 
-from ssl import create_default_context
-from elasticsearch import Elasticsearch
+# from ssl import create_default_context
+# from elasticsearch import Elasticsearch
 
-context = create_default_context(cafile=r"C:\Users\huzyfa\Desktop\elasticsearch-8.1.0\config\certs\http_ca.crt")
-es = Elasticsearch(
-    ['localhost', 'otherhost'],
-    http_auth=('user', 'secret'),
-    # scheme="https",
-    # port=443,
-    ssl_context=context,
-)
+# context = create_default_context(cafile=r"C:\Users\huzyfa\Desktop\elasticsearch-8.1.0\config\certs\http_ca.crt")
+# es = Elasticsearch(
+#     ['localhost', 'otherhost'],
+#     http_auth=('user', 'secret'),
+#     # scheme="https",
+#     # port=443,
+#     ssl_context=context,
+# )
 
-pprint(response.content)
+# pprint(response.content)
 ###############################################################################################################
 
 from elasticsearch import Elasticsearch

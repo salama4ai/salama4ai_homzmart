@@ -1,15 +1,16 @@
 import requests
 import pandas as pd
 import numpy as np
+from requests.auth import HTTPBasicAuth 
 
 BASE = "http://127.0.0.1:9200/"
-# response = requests.put(BASE + "hotelindexer")
+response = requests.get(BASE + "hotelindexer", auth=HTTPBasicAuth('user', 'pass'))
 
 import requests
-from requests.auth import HTTPBasicAuth 
 from pprint import pprint 
 uname = 'elastic'
 ELASTIC_PASSWORD = "7ysm8X2-_DU1fiAwpkSh"
+
 # response = requests.get('http://localhost:9200', auth = HTTPBasicAuth(uname, ELASTIC_PASSWORD))
 
 
@@ -17,21 +18,21 @@ ELASTIC_PASSWORD = "7ysm8X2-_DU1fiAwpkSh"
 
 
 
-# SSL client authentication using client_cert and client_key
+# # SSL client authentication using client_cert and client_key
 
-from ssl import create_default_context
-from elasticsearch import Elasticsearch
+# from ssl import create_default_context
+# from elasticsearch import Elasticsearch
 
-context = create_default_context(cafile=r"C:\Users\huzyfa\Desktop\elasticsearch-8.1.0\config\certs\http_ca.crt")
-es = Elasticsearch(
-    ['localhost', 'otherhost'],
-    http_auth=('user', 'secret'),
-    # scheme="https",
-    # port=443,
-    ssl_context=context,
-)
+# context = create_default_context(cafile=r"C:\Users\huzyfa\Desktop\elasticsearch-8.1.0\config\certs\http_ca.crt")
+# es = Elasticsearch(
+#     ['localhost', 'otherhost'],
+#     http_auth=('user', 'secret'),
+#     # scheme="https",
+#     # port=443,
+#     ssl_context=context,
+# )
 
-pprint(response.content)
+# pprint(response.content)
 ###############################################################################################################
 
 from elasticsearch import Elasticsearch

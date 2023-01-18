@@ -1,5 +1,6 @@
 flask
 Flask-RESTful
 requests
+pandas
 elasticsearch
 elasticsearch[async]
