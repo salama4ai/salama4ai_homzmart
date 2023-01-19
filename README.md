@@ -31,6 +31,14 @@ The speed and scalability of Elasticsearch and its ability to index many types o
     Security analytics
     Business analytics
 
+#
+this work done by Ahmed Salama
+
+salama4ai@gmail.com
+
+[github.com/salama4ai](https://www.github.com/salama4ai/)
+
+[linkedin.com/in/salama4ai](https://www.linkedin.com/in/salama4ai/)
 
 
 
